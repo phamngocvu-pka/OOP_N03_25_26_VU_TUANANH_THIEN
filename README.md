@@ -5,6 +5,11 @@
 Dự án này được xây dựng trong khuôn khổ môn học **Lập trình Hướng đối tượng (OOP)**.  
 Mục tiêu là áp dụng các nguyên lý OOP (tính kế thừa, đóng gói, đa hình, trừu tượng) để xây dựng một hệ thống **quản lý bệnh viện** có khả năng quản lý thông tin bệnh nhân, bác sĩ, phòng ban, lịch khám và hóa đơn viện phí.
 
+## Thành Viên:
+- Phạm NGọc Vũ
+- Nguyễn Hoàng Thiên
+- Phạm Tuấn Anh
+
 ## 🎯 Mục tiêu
 - Rèn luyện kỹ năng thiết kế và lập trình theo hướng đối tượng bằng **Java**.
 - Mô phỏng hoạt động cơ bản của bệnh viện.
