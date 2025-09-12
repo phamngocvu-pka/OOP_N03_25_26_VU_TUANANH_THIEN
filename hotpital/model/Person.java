@@ -14,8 +14,25 @@ public class Person{
         this.phone = phone;
         this.address = address;
     }
-    public int Age(){
+    public int getAge(){
         return LocalDate.now().getYear() - this.dob.getYear();
     }
-    
+    public String getName(){
+        return this.name;
+    }
+    public String getFullname(){
+        return this.fullname;   
+    }
+    public String getEmail(){
+        return this.email;
+    }
+    public LocalDate getDob(){
+        return this.dob;
+    }
+    public String getPhone(){
+        return this.phone;
+    }
+    public String getAddress(){
+        return this.address;
+    }   
 }
