@@ -1,3 +1,5 @@
+package hotpital.model;
+import java.time.LocalDate;
 public class Person{
     public String name;
     public String fullname;
