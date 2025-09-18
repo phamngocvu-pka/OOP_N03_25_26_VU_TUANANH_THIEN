@@ -4,12 +4,12 @@ public class doctor {
     public String specialization;
     public String contactInfo;
     
-    public Doctor(String name, int age, String specialization, String contactInfo) {
-        this.name = name;
-        this.age = age;
-        this.specialization = specialization;
-        this.contactInfo = contactInfo;
-    }
+   public Person(String id, String name, int age, String address) {
+    this.id = id;
+    this.name = name;
+    this.age = age;
+    this.address = address;
+}
 public string getName() {
         return name;
     }
@@ -40,5 +40,35 @@ public string getName() {
 
     public void setContactInfo(String contactInfo) {
         this.contactInfo = contactInfo;
-}
+    }
+public String getname() {
+        return name;
+    }
+public void setname(String name) {
+        this.name = name;
+    }
+public int getage() {
+        return age;
+    }
+public void setage(int age) {   
+        this.age = age;
+    }
+public String getspecialization() {
+        return specialization;
+    }
+public void setspecialization(String specialization) {
+        this.specialization = specialization;
+    }
+public String getcontactInfo() {
+        return contactInfo;
+    }
+public void setcontactInfo(String contactInfo) {
+        this.contactInfo = contactInfo;
+    }
+public void displayInfo() {
+        System.out.println("Doctor Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Specialization: " + specialization);
+        System.out.println("Contact Info: " + contactInfo);
+    }
 }
