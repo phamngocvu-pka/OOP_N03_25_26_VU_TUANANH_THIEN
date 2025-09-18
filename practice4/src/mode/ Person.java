@@ -11,6 +11,7 @@ public class Person {
     this.gender = gender;
 
 }
+ public Student(String id, String name, int age, string
 public string name;
  public int getAge() {
     return age;
