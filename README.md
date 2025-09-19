@@ -3,16 +3,22 @@
 - Dự án OOP - Quản Lý Bệnh Viện
 
 # 1. Members (Thành viên dự án)
-    - Phạm Ngọc Vũ - 23010192
-    - Nguyễn Hoàng Thiên - 23010139
-    - Phạm Tuấn Anh - 22010227
+Phạm Ngọc Vũ - 23010192
+
+Nguyễn Hoàng Thiên - 23010139
+
+Phạm Tuấn Anh - 22010227
 # 2. Yêu cầu chính
 
-    - Quản lý thông tin bệnh nhân
-    - Quản lý bác sĩ & nhân viên y tế
-    - Quản lý phòng ban & cơ sở vật chất
-    - Quản lý lịch hẹn và khám chữa bệnh
-    - Quản lý thanh toán viện phí
+     Quản lý thông tin bệnh nhân.
+
+     Quản lý bác sĩ & nhân viên y tế.
+
+     Quản lý phòng ban & cơ sở vật chất.
+
+     Quản lý lịch hẹn và khám chữa bệnh.
+     
+     Quản lý thanh toán viện phí.
 
 # 3. Mô tả cụ thể
 
