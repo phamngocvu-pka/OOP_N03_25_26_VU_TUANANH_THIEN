@@ -33,4 +33,19 @@ public class  Dotor {
         this.department = department;
     }   
 
+    // Optional: toString method for debugging
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "name='" + name + '\'' +
+                ", fullname='" + fullname + '\'' +
+                ", email='" + email + '\'' +
+                ", dob=" + dob +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", specialization='" + specialization + '\'' +
+                ", experience=" + experience +
+                ", department='" + department + '\'' +
+                '}';
+    }
 }

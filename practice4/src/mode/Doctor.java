@@ -1,74 +1,34 @@
-public class doctor {
-    public String name;
-    public int age;
-    public String specialization;
-    public String contactInfo;
+package hotpital.model;
+import java.time.LocalDate;
+public class  Dotor {
+    private String name;
+    private String fullname;
+    private String email;
+    private LocalDate dob;
+    private String phone;
+    private String address;  
+    private String specialization;
+    private int experience; // in years 
+    private String department;
+
+
+    public Dotor(String name, String fullname, String email, LocalDate dob, String phone, String address, String specialization, int experience, String department){
+    super(name, fullname, email, dob, phone, address);
+        this.specialization = specialization;
+        this.experience = experience;
+        this.department = department;
+    }
+    public String getSpecialization(){
+        return this.specialization;
     
-   public Person(String id, String name, int age, String address) {
-    this.id = id;
-    this.name = name;
-    this.age = age;
-    this.address = address;
+    
 }
-public string getName() {
-        return name;
+    public int getExperience(){
+        return this.experience;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    public String getDepartment(){
+        return this.department;
     }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getSpecialization() {
-        return specialization;
-    }
-
-    public void setSpecialization(String specialization) {
-        this.specialization = specialization;
-    }
-
-    public String getContactInfo() {
-        return contactInfo;
-    }
-
-    public void setContactInfo(String contactInfo) {
-        this.contactInfo = contactInfo;
-    }
-public String getname() {
-        return name;
-    }
-public void setname(String name) {
-        this.name = name;
-    }
-public int getage() {
-        return age;
-    }
-public void setage(int age) {   
-        this.age = age;
-    }
-public String getspecialization() {
-        return specialization;
-    }
-public void setspecialization(String specialization) {
-        this.specialization = specialization;
-    }
-public String getcontactInfo() {
-        return contactInfo;
-    }
-public void setcontactInfo(String contactInfo) {
-        this.contactInfo = contactInfo;
-    }
-public void displayInfo() {
-        System.out.println("Doctor Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Specialization: " + specialization);
-        System.out.println("Contact Info: " + contactInfo);
-    }
-}
+    public void setDepartment(String department){
+        this.department = department;
+    }   
