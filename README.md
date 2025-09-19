@@ -44,3 +44,6 @@ Phạm Tuấn Anh
 
 
 # 4 Sơ đồ khối
+## 4.1 UML Class Diagram
+
+<img width="1241" height="1284" alt="OPP2 drawio" src="https://github.com/phamngocvu-pka/OOP_N03_25_26_VU_TUANANH_THIEN/blob/main/screenshot_1758273765.png" />
