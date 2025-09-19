@@ -47,3 +47,4 @@ public class HospitalManager {
     public void deleteDepartment(int id) { departments.removeIf(d -> d.getId() == id); }
     public void listDepartments() { departments.forEach(System.out::println); }
 }
+
