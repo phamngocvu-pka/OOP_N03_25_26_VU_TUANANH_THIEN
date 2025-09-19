@@ -220,4 +220,8 @@ List <ReceiveManagement> finishedmembers (danh sách thành viên đóng tiền)
 
 ## 5.1 UML Class Diagram
 
+<<<<<<< HEAD
 <img width="1241" height="1284" alt="OPP2 drawio" src="https://github.com/phamngocvu-pka/OOP_N03_25_26_VU_TUANANH_THIEN/blob/main/screenshot_1758273765.png" />
+=======
+<img width="1241" height="1284" alt="OPP2 drawio" src="https://github.com/phamngocvu-pka/OOP_N03_25_26_VU_TUANANH_THIEN/blob/main/hotpital/image/class_diagram.png" />
+>>>>>>> 505df81b8d9f27e0bb452cb4fdc9efc51b313750
