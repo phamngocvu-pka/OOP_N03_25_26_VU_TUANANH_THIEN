@@ -1,0 +1,7 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org" th:replace="_layout :: *"><body>
+  <h3 th:text="${department.id} != null ? 'Sửa Department' : 'Thêm Department'"></h3>
+  <form method="post" th:action="${department.id} != null ? @{'/departments/' + ${department.id}} : @{'/departments'}" th:object="${department}">
+    <div class="row g-3"><div class="col-md-4"><label class="form-label">Name</label><input class="form-control" type="text" th:field="*{name}"/></div></div>
+    <button class="btn btn-primary mt-3">Lưu</button>
+  </form>
+</body></html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org" th:replace="_layout :: *"><body>
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3>Prescriptions</h3>
+    <a href="/prescriptions/create" class="btn btn-primary">+ Thêm</a>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead><tr><th>id</th><th>medicineName</th><th>dosage</th><th>days</th><th></th></tr></thead>
+      <tbody>
+        <tr th:each="prescription : ${items}">
+          <td th:text="${prescription.id}"></td><td th:text="${prescription.medicineName}"></td><td th:text="${prescription.dosage}"></td><td th:text="${prescription.days}"></td>
+          <td class="text-nowrap">
+            <a th:href="@{'/prescriptions/' + ${prescription.id} + '/edit'}" class="btn btn-sm btn-secondary">Sửa</a>
+            <form th:action="@{'/prescriptions/' + ${prescription.id} + '/delete'}" method="post" style="display:inline;">
+              <button class="btn btn-sm btn-danger">Xoá</button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body></html>

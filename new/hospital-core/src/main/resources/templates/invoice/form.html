@@ -1,0 +1,8 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org" th:replace="_layout :: *"><body>
+  <h3 th:text="${invoice.id} != null ? 'Sửa Invoice' : 'Thêm Invoice'"></h3>
+  <form method="post" th:action="${invoice.id} != null ? @{'/invoices/' + ${invoice.id}} : @{'/invoices'}" th:object="${invoice}">
+    <div class="row g-3"><div class="col-md-4"><label class="form-label">Amount</label><input class="form-control" type="number" th:field="*{amount}"/></div>
+<div class="col-md-4"><label class="form-label">Status</label><input class="form-control" type="text" th:field="*{status}"/></div></div>
+    <button class="btn btn-primary mt-3">Lưu</button>
+  </form>
+</body></html>
