@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* ========= THEME & GLOBAL ========= */
+:root{
+  --bg:#0b0f16; --card:#121824; --soft:#1a2331;
+  --text:#e6edf5; --muted:#9fb0c7;
+  --primary:#43c6e0; --primary-weak:#2aa7be;
+  --border:#1f2a3a; --ring:rgba(67,198,224,.18);
+}
+
+*{ box-sizing:border-box }
+html,body{ height:100% }
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family: Inter, system-ui, Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+/* Utility */
+.muted{ color:var(--muted) }
+h1,h2,h3,h4{ margin:0 0 10px }
+
+/* ========= CORE LAYOUT ========= */
+.shell{
+  display:grid; grid-template-columns:1fr 320px; gap:16px;
+  max-width:1280px; margin:16px auto; padding:0 16px;
+}
+.main .card{
+  background:var(--card); border:1px solid var(--border);
+  border-radius:14px; padding:14px;
+  box-shadow:0 12px 28px rgba(0,0,0,.25);
+}
+.side .card{ background:var(--soft) }
+
+/* Sections / views */
+.view.hidden{ display:none }
+
+/* Footer */
+.footer{ padding:18px 12px; text-align:center; color:var(--muted) }

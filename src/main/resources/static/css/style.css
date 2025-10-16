@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* ===== Theme ===== */
+:root{
+  --bg:#0b0f16; --card:#121824; --soft:#1a2231;
+  --text:#e6edf5; --muted:#9fb0c7;
+  --primary:#43c6e0; --primary-weak:#2aa7be; --border:#1f2a3a;
+  --ring:rgba(67,198,224,.18);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Arial}
+
+/* ===== Topbar ===== */
+.topbar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 16px;background:var(--card);border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:20
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+.logo-dot{width:22px;height:22px;border-radius:8px;background:linear-gradient(135deg,#2bd9ff,#43c6e0)}
+.top-actions{display:flex;align-items:center;gap:10px}
+.search{width:320px;max-width:40vw}
+.input{
+  width:100%;padding:10px 12px;border-radius:10px;
+  border:1px solid var(--border);background:var(--soft);color:var(--text);
+  outline:none
+}
+.input:focus{box-shadow:0 0 0 3px var(--ring);border-color:var(--primary)}
+.btn{padding:8px 12px;border-radius:10px;border:1px solid var(--border);background:var(--soft);color:var(--text);cursor:pointer}
+.btn.ghost:hover{box-shadow:0 0 0 3px var(--ring)}
+
+/* ===== Tabs ===== */
+.tabs{display:flex;gap:12px;padding:10px 16px;background:#0d131e;position:sticky;top:56px;z-index:15;border-bottom:1px solid var(--border)}
+.tab{background:transparent;color:var(--muted);border:none;padding:8px 10px;border-radius:8px;cursor:pointer}
+.tab.active{color:var(--text);box-shadow:inset 0 -2px 0 0 var(--primary)}
+.tab:hover{color:#eaf7ff}
+
+/* ===== Layout ===== */
+.shell{display:grid;grid-template-columns:1fr 320px;gap:16px;max-width:1280px;margin:16px auto;padding:0 16px}
+@media (max-width:1024px){ .shell{grid-template-columns:1fr} .side{order:-1} }
+.main .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 12px 28px rgba(0,0,0,.25)}
+.side .card{background:var(--soft)}
+.quick{display:grid;grid-template-columns:1fr;gap:10px}
+.quick-item{padding:10px;border-radius:10px;background:var(--soft);border:1px solid var(--border);cursor:pointer;color:var(--text)}
+.quick-item:hover{border-color:var(--primary)}
+
+/* ===== Grids ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.grid-2{display:grid;grid-template-columns:2fr 1fr;gap:14px}
+@media (max-width:900px){ .grid-2{grid-template-columns:1fr} }
+
+/* ===== Cards / Text ===== */
+h3{margin:0 0 10px}
+.meta,.muted{color:var(--muted)}
+.big-num{font-size:28px;font-weight:800}
+
+/* ===== Gauge ===== */
+.gauge{position:relative;display:flex;justify-content:center;align-items:center;height:140px}
+.gauge-svg{width:220px;height:110px}
+.gauge-bg{fill:none;stroke:#243244;stroke-width:12;stroke-linecap:round}
+.gauge-val{fill:none;stroke:var(--primary);stroke-width:12;stroke-linecap:round;filter:drop-shadow(0 0 6px rgba(67,198,224,.5))}
+.gauge-valnum{position:absolute;bottom:26px;font-size:42px;font-weight:800}
+
+/* ===== Bars (color stats) ===== */
+.bars{display:grid;gap:8px}
+.bar-row{display:grid;grid-template-columns:90px 1fr 52px;gap:8px;align-items:center}
+.bar-label{color:var(--muted)}
+.bar-track{height:12px;background:#1a2331;border-radius:999px;overflow:hidden;border:1px solid var(--border)}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--primary),#78e3f5)}
+
+/* ===== Cars ===== */
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.filters-inline{display:flex;gap:8px;flex-wrap:wrap}
+.select{padding:9px 12px;border-radius:10px;border:1px solid var(--border);background:var(--soft);color:var(--text)}
+.grid .car{background:var(--soft);border:1px solid var(--border);border-radius:12px;padding:12px;transition:.2s}
+.grid .car:hover{transform:translateY(-2px);border-color:var(--primary)}
+.car img{width:100%;border-radius:10px}
+.car h4{margin:8px 0 2px}
+.car .muted{font-size:13px}
+
+/* ===== Side ===== */
+.side-block h3{margin-bottom:8px}
+.mini-map{height:120px;border-radius:10px;background:
+  linear-gradient(#202b3b,#1a2331);
+  border:1px solid var(--border);margin-top:8px}
+.footer{padding:18px 12px;text-align:center;color:var(--muted)}
