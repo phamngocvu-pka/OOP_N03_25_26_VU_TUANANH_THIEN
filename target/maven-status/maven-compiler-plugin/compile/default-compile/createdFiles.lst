@@ -7,6 +7,7 @@ com/autosys/model/DoanhNghiep.class
 com/autosys/QuanLyXeApplication.class
 com/autosys/model/CuaHangUyNhiem.class
 com/autosys/model/Car.class
+com/autosys/model/MauSac$1.class
 com/autosys/service/HeThongQuanLy.class
 com/autosys/model/ChiNhanhDiaPhuong.class
 com/autosys/controller/WebController.class
