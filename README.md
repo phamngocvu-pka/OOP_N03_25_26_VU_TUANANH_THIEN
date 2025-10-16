@@ -1,6 +1,6 @@
 # OOP_Project
 
-- Dự án OOP - Quản Lý Bệnh Viện
+- Dự án OOP - Quản Lý Cửa Hàng Xe
 
 # 1. Members (Thành viên dự án)
 Phạm Ngọc Vũ - 23010192
@@ -10,23 +10,20 @@ Nguyễn Hoàng Thiên - 23010139
 Phạm Tuấn Anh - 22010227
 # 2. Yêu cầu chính
 
-     Quản lý thông tin bệnh nhân.
+     Quản lý thông tin Các hãng xe
 
-     Quản lý bác sĩ & nhân viên y tế.
+     Quản lý Màu Sắc
 
      Quản lý phòng ban & cơ sở vật chất.
-
-     Quản lý lịch hẹn và khám chữa bệnh.
      
-     Quản lý thanh toán viện phí.
+     Quản lý Các chi nhánh.
 
 # 3. Mô tả cụ thể
 
 - Giới thiệu
 
     + Dự án này được xây dựng trong khuôn khổ môn học Lập trình Hướng đối tượng (OOP).
-    + Mục tiêu là áp dụng các nguyên lý OOP (kế thừa, đóng gói, đa hình, trừu tượng) để xây dựng một hệ thống quản lý bệnh + + + Viện có khả năng quản lý thông tin bệnh nhân, bác sĩ, phòng ban, lịch khám và hóa đơn viện phí.
-
+    + Mục tiêu là áp dụng các nguyên lý OOP (kế thừa, đóng gói, đa hình, trừu tượng) để xây dựng một hệ thống quản lý Cửa + + + Hàng Xe có khả năng quản lý thông tin Xe & Màu sắc, Chi nhánh, nhà phân phối.
 - Mục tiêu
 
     + Rèn luyện kỹ năng thiết kế và lập trình theo hướng đối tượng bằng Java.
@@ -66,16 +63,12 @@ Phạm Tuấn Anh - 22010227
 ### 4.1.1. Attribute (Thuộc tính)
 
 ```
- String id (mã thành viên)
- String name (họ và tên)
- String gender (giới tính)
- Date dob (ngày sinh)
- Date dod (ngày mất, có thể null)
- String address (địa chỉ)
- Person father (bố)
- Person mother (mẹ)
- String phone (số điện thoại)
- Person spouse (quan hệ vợ chồng, có thể null)
+ private String id;
+    String name;
+    String brand;
+    MauSac color;
+    long price;
+    String image;
  ```
 
 ### 4.1.2. Methods (Phương thức)
@@ -112,7 +105,7 @@ Phạm Tuấn Anh - 22010227
  resetPassword().
  ```
 
-## 4.3. Hotpital (Bệnh Viện)
+## 4.3. CuaHangXe (Bệnh Viện)
 
 ### 4.3.1. Attribute (Thuộc tính)
 
