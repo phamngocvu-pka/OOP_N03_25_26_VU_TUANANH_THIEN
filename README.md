@@ -149,6 +149,7 @@ display().
 # 5 Sơ đồ khối
 
 ## 5.1 UML Class Diagram
+![uml](image/uml.jpg)
 
 =======
 
