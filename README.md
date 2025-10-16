@@ -58,12 +58,12 @@ Phạm Tuấn Anh - 22010227
 
 # 4. Objects (Đối tượng)
 
-## 4.1 Person (Thành viên)
+## 4.1 Car (Xe)
 
 ### 4.1.1. Attribute (Thuộc tính)
 
 ```
- private String id;
+    String id;
     String name;
     String brand;
     MauSac color;
@@ -76,12 +76,12 @@ Phạm Tuấn Anh - 22010227
 ```
  Person().
  set(), get() cho từng thuộc tính.
- int getAge().
- setParents().
- setSpouse().
- editMembereditMember().
- removeMember().
- display().
+ String getId().
+ String getName().
+ String getBrand().
+ MauSac getColor().
+ long getPrice().
+ String getImage().
  ```
 
 ## 4.2. User (Người dùng)
@@ -105,28 +105,30 @@ Phạm Tuấn Anh - 22010227
  resetPassword().
  ```
 
-## 4.3. CuaHangXe (Bệnh Viện)
+## 4.3. Nhà Phân Phối (cửa hàng)
 
 ### 4.3.1. Attribute (Thuộc tính)
 
 ```
-  String id (mã bệnh viện)
-  String nameHotpital()
-  List <Person> HotpitalMembers (danh sách thành viên trong bệnh viện)
+   String doanhNghiep; 
+   String quocGia;  
+   String khuVuc;    
+   String tenCuaHang;   
+   String diaChi; 
  ```
 
 ### 4.3.2. Methods (Phương thức)
 
 ```
- Hotpital().
- getMember().
- addMembers().
- removeMember().
- display().
- removeHotpital().
+ String getDoanhNghiep().
+ String getQuocGia().
+ String getKhuVuc().
+ String getTenCuaHang().
+ String getDiaChi().
+
  ```
 
-## 4.4. HotpitalTree (Cây bệnh viện)
+## 4.4. ShopCarTree (Cây bệnh viện)
 
 ### 4.4.1. Attribute (Thuộc tính)
 
@@ -138,83 +140,16 @@ List <Person> members ()
 ### 4.4.2. Methods (Phương thức)
 
  ```
-HotpitalTree().
+ShopCarTree().
 addNode().
 display().
  ```
 
-## 4.5. ReceiveManagement (Quản lý thu)
-
-### 4.5.1. Attribute (Thuộc tính)
-
- ```
-String id (mã khoản thu)
-String name (tên khoản thu).
-float money (số tiền thu).
-String type (hạng mục thu).
-String description (mô tả).
-Date date (ngày thu tiền),
-List <ReceiveManagement> finishedmembers (danh sách thành viên đóng tiền).
- ```
-
-### 4.5.2. Methods (Phương thức)
-
- ```
- getName()
- getMoney()
- getType()
- getdescription()
- getDate()
-  ```
-
-## 4.6. ExpenseManagement (Quản lý chi)
-
-### 4.6.1. Attribute (Thuộc tính)
-
- ```
- String id (mã khoản chi).
- String name (tên khoản chi).
- float money (số tiền chi).
- String type (hạng mục chi).
- String description (mô tả).
- Date date (ngày chi tiền).
- ```
-
-### 4.6.2. Methods (Phương thức)
-
- ```
- getName()
- getMoney()
- getType()
- getdescription()
- getDate()
-  ```
-
-## 4.7. FinancialManagement (Quản lý tài chính)
-### 4.7.1. Attribute (Thuộc tính)
-
- ```
- incomes: List<ReceiveManagement>,
- expenses: List<ExpenseManagement>,
- ```
-
-### 4.7.2. Methods (Phương thức)
-
- ```
- addIncome(receive: ReceiveManagement),
- addExpense(expense: ExpenseManagement),
- getTotalReceive(),
- getTotalExpense(),
- getBalance(),
- getCategoryReport(),
-  ```
 
 # 5 Sơ đồ khối
 
 ## 5.1 UML Class Diagram
 
-<<<<<<< HEAD
-<img width="1241" height="1284" alt="OPP2 drawio" src="https://github.com/phamngocvu-pka/OOP_N03_25_26_VU_TUANANH_THIEN/blob/main/screenshot_1758273765.png" />
 =======
-<img width="1241" height="1284" alt="OPP2 drawio" src="https://github.com/phamngocvu-pka/OOP_N03_25_26_VU_TUANANH_THIEN/blob/main/hotpital/image/class_diagram.png" />
->>>>>>> 505df81b8d9f27e0bb452cb4fdc9efc51b313750
+
+>>>>>>> 
