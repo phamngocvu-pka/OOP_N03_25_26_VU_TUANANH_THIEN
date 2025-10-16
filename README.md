@@ -128,7 +128,7 @@ Phạm Tuấn Anh - 22010227
 
  ```
 
-## 4.4. ShopCarTree (Cây bệnh viện)
+## 4.4. ShopCarTree (Cây Cửa Hàng Xe)
 
 ### 4.4.1. Attribute (Thuộc tính)
 
