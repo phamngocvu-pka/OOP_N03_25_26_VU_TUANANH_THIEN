@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Thêm / Sửa Thiết bị</title>
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+</head>
+<body class="bg-light">
+
+<!-- ✅ Header -->
+<th:block th:replace="~{_header :: _header}"></th:block>
+
+<div class="container mt-4">
+  <h4 class="text-primary mb-3" th:text="${item.id == null ? ' Thêm thiết bị mới' : ' Cập nhật thiết bị'}"></h4>
+  <!--  FORM ĐÃ SỬA -->
+  <form th:action="@{/equipment}" method="post" th:object="${item}"
+        class="bg-white p-4 rounded shadow-sm border">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label class="form-label fw-bold">Mã thiết bị</label>
+        <input class="form-control" th:field="*{code}" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label class="form-label fw-bold">Tên thiết bị</label>
+        <input class="form-control" th:field="*{name}" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label class="form-label fw-bold">Trạng thái</label>
+        <select class="form-select" th:field="*{status}">
+          <option value="READY">Sẵn sàng</option>
+          <option value="IN_USE">Đang sử dụng</option>
+          <option value="REPAIR">Đang sửa chữa</option>
+        </select>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label class="form-label fw-bold">Phòng</label>
+        <select class="form-select" name="room.id">
+          <option value="">-- Chọn phòng --</option>
+          <option th:each="r : ${rooms}"
+                  th:value="${r.id}"
+                  th:selected="${item.room != null and r.id == item.room.id}"
+                  th:text="${r.code}"></option>
+        </select>
+      </div>
+    </div>
+
+    <div class="d-flex gap-2">
+      <button type="submit" class="btn btn-primary">Lưu</button>
+      <a href="/equipment" class="btn btn-secondary">Quay lại</a>
+    </div>
+  </form>
+</div>
+
+<!-- ✅ Footer -->
+<th:block th:replace="~{_footer :: _footer}"></th:block>
+
+<script th:src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>

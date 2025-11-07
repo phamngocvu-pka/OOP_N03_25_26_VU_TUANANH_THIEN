@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách Bác sĩ & Nhân viên</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+</head>
+<body class="bg-light">
+
+<!-- ✅ Header -->
+<th:block th:replace="~{_header :: _header}"></th:block>
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+        <h3 class="text-primary mb-2"> Danh sách Bác sĩ & Nhân viên</h3>
+        <!-- Form tìm kiếm -->
+        <form class="d-flex mb-2" th:action="@{/staff}" method="get">
+            <input class="form-control me-2" type="search" name="keyword"
+                   th:value="${keyword}" placeholder=" Tìm theo mã hoặc tên...">
+            <button class="btn btn-outline-primary" type="submit">Tìm</button>
+        </form>
+        <div>
+            <a href="/staff/new" class="btn btn-success mb-2">➕ Thêm nhân viên</a>
+            <a href="/" class="btn btn-secondary mb-2">Trang chủ</a>
+        </div>
+    </div>
+
+    <!-- Bảng danh sách -->
+    <table class="table table-hover table-bordered bg-white shadow-sm">
+        <thead class="table-primary text-center">
+        <tr>
+            <th>Mã</th>
+            <th>Họ tên</th>
+            <th>Chức vụ</th>
+            <th>Điện thoại</th>
+            <th>CMND/CCCD</th>
+            <th>Khoa</th>
+            <th>Thao tác</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="s : ${staffList}">
+            <td th:text="${s.code}"></td>
+            <td th:text="${s.fullName}"></td>
+            <td th:text="${s.role}"></td>
+            <td th:text="${s.phone}"></td>
+            <td th:text="${s.idCard}"></td>
+            <td th:text="${s.department != null ? s.department.name : 'Chưa phân khoa'}"></td>
+            <td class="text-center">
+                <a th:href="@{/staff/edit/{id}(id=${s.id})}" class="btn btn-warning btn-sm">✏ Sửa</a>
+                <a th:href="@{/staff/delete/{id}(id=${s.id})}"
+                   class="btn btn-danger btn-sm"
+                   onclick="return confirm('Bạn có chắc muốn xóa nhân viên này không?');">🗑 Xóa</a>
+            </td>
+        </tr>
+        <tr th:if="${#lists.isEmpty(staffList)}">
+            <td colspan="7" class="text-center text-muted fst-italic">Không tìm thấy nhân viên nào.</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ✅ Footer -->
+<th:block th:replace="~{_footer :: _footer}"></th:block>
+
+<script th:src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
