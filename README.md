@@ -1,5 +1,13 @@
 # OOP-QL-PK – Quản lý phòng khám
 - Tên dự án: Xây dựng hệ thống quản lý phòng khám
+##  Triển Khai
+- Tài Khoản: 23010139@st.phenikaa-uni.edu.vn
+- Mật khẩu: nhom14
+- Link Github Source Code: https://github.com/phamngocvu-pka/OOP_N03_25_26_VU_TUANANH_THIEN
+- Link Youtube demo ứng dụng: 
+- Link trang web chính thức: 
+- Link trang web h2-console: h
+
 #  MỤC LỤC
 
 1. [Giới thiệu chung](#1-giới-thiệu-chung)  
@@ -364,11 +372,3 @@ Hệ thống được tổ chức theo các nhóm chức năng chính:
 ![Logout UI](src/docs/img/ui_login.png)
 
 ---
-
-##  Triển Khai
-- Link Github Source Code: https://shiny-space-garbanzo-4j9vwx7759vj2q5v6.github.dev/
-- Link Youtube demo ứng dụng: 
-- Link trang web chính thức: https://shiny-space-garbanzo-4j9vwx7759vj2q5v6-8080.app.github.dev/
-- Link trang web h2-console: https://shiny-space-garbanzo-4j9vwx7759vj2q5v6-8080.app.github.dev/h2-console
-- Tài Khoản: 23010139@st.phenikaa-uni.edu.vn
-- Mật khẩu: nhom14
