@@ -7,7 +7,14 @@
 - Link Youtube demo ứng dụng: 
 - Link trang web chính thức: 
 - Link trang web h2-console: h
+## Cách chạy dự án
+1. Clone Dự án 
 
+   ```git clone https://github.com/phamngocvu-pka/OOP_N03_25_26_VU_TUANANH_THIEN ```
+
+2.Run
+
+   ```mvn spring-boot:run ```
 #  MỤC LỤC
 
 1. [Giới thiệu chung](#1-giới-thiệu-chung)  
@@ -54,7 +61,7 @@
 
 ### 1.1 Thành viên dự án
 - Nguyễn Hoàng Thiên - 23010139
-- ...
+- Phạm Ngọc Vũ -23010192
 - ...
 
 ### 1.2 Yêu cầu chính
