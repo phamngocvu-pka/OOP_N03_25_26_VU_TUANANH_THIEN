@@ -12,8 +12,9 @@
 
    ```git clone https://github.com/phamngocvu-pka/OOP_N03_25_26_VU_TUANANH_THIEN ```
 
-2.Run
 
+2. Run
+  
    ```mvn spring-boot:run ```
 #  MỤC LỤC
 
