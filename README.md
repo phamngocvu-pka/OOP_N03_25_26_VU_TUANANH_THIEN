@@ -5,8 +5,6 @@
 - Mật khẩu: nhom14
 - Link Github Source Code: https://github.com/phamngocvu-pka/OOP_N03_25_26_VU_TUANANH_THIEN
 - Link Youtube demo ứng dụng: 
-- Link trang web chính thức: 
-- Link trang web h2-console: h
 ## Cách chạy dự án
 1. Clone Dự án 
 
@@ -16,6 +14,8 @@
 2. Run
   
    ```mvn spring-boot:run ```
+
+3. Web : http://localhost:8080/   
 #  MỤC LỤC
 
 1. [Giới thiệu chung](#1-giới-thiệu-chung)  
@@ -380,3 +380,4 @@ Hệ thống được tổ chức theo các nhóm chức năng chính:
 ![Logout UI](src/docs/img/ui_login.png)
 
 ---
+Thanks!
